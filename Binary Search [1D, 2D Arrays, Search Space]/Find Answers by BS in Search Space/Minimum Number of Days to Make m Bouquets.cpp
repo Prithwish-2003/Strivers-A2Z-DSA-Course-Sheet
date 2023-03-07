@@ -74,7 +74,8 @@ public:
         }
 public:
     int check(vector<int>&bloomDay,int mid,int m,int k){
-        int co=0;int m1=0;
+        int co=0;int m1=0; 
+  //co  ফ্লাওয়ার কাউন্ট করবে..প্রতি বুকে তে k সংখ্যক ফুলের সমান হলে..বুকে 1 করে বাড়বে আর co 0 hobe.. এবং আবার loop ঘুরবে 
         for(int i=0;i<bloomDay.size();i++){
             if (bloomDay[i]<=mid){
                 co+=1;
