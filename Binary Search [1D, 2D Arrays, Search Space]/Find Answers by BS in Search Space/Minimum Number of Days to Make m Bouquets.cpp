@@ -63,11 +63,11 @@ public:
             mid=min_day+(max_day-min_day)/2;
           int x =  check(bloomDay,mid,m,k);
             if(x<m) min_day=mid+1;
-            else if(x==m){
+            else if(x>=m){
                 day= mid;
                 max_day=mid-1;
             }
-            else max_day=mid-1;
+            //else max_day=mid-1;
             
     }
         return day;
