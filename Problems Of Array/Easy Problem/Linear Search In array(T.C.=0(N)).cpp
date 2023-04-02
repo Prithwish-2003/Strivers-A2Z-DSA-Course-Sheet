@@ -23,28 +23,59 @@ in the array, output is -1.
  
 
 
+//{ Driver Code Starts
+#include <bits/stdc++.h> 
+using namespace std;
 
 
-
-
-class Solution {
-public:
-    void moveZeroes(vector<int>& nums) {
-        int n=nums.size();
-        int i=0;
-        while(i<n){
-            if(nums[i]==0){
-                break;
-            }
-            else i++;
-        }
-       int j=i+1;
-        while(j<n){
-            if(nums[j]!=0){
-                swap(nums[i],nums[j]);
-                i=i+1;
-            }
-            else j++;
-        }
+// } Driver Code Ends
+class Solution{
+    public:
+    // Function to find element in sorted array
+    // arr: input array
+    // N: size of array
+    // K: element to be searche
+    int searchInSorted(int arr[], int N, int K) 
+    { 
+    
+       // Your code here
+       for(int i=0;i<N;i++){
+           if(arr[i]==K){
+               return 1;
+           }
+           
+       }
+       return -1;
     }
 };
+
+//{ Driver Code Starts.
+
+
+int main(void) 
+{ 
+    
+    int t;
+    cin >> t;
+    while(t--){
+        int n, k;
+        cin >> n >> k;
+        
+        int arr[n];
+        
+        for(int i = 0;i<n;i++){
+            cin >> arr[i];
+        }
+        
+        Solution ob;
+        cout << ob.searchInSorted(arr, n, k) << endl;
+
+    }
+
+	return 0; 
+} 
+
+// } Driver Code Ends
+
+
+
