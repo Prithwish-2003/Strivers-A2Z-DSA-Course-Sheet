@@ -1,7 +1,6 @@
 Problem link:
-
-
-https://www.codingninjas.com/codestudio/problems/longest-subarray-with-sum-k_6682399
+# Link:
+https://www.codingninjas.com/codestudio/problems/longest-subarray-with-sum-k_6682399/
 
 
 
