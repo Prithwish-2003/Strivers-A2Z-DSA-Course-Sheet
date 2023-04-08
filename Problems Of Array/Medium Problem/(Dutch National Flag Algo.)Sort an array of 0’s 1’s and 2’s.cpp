@@ -29,11 +29,7 @@ S.C = 0(1)
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-    //DUTCH NATIONAL FLAG  Algorithm
-        //three pointer low,mid,high
-        //intitution:copy te ache.. //starting to low -1 sob 0 hobe,low to 
-//mid -1 sob 1 hobe ar mid to 
-//high unsorted thakbe...jeta sort //korchi...high+1 theke n-1 sob 2 thakbe
+    
    int n = nums.size();
    int low=0,mid=0,high=n-1;
    while(mid<=high){
