@@ -22,7 +22,8 @@ Constraints:
 
 The number of nodes in the list is the range [0, 5000].
 -5000 <= Node.val <= 5000
-
+t.c = 0(N)
+s.c = 0(1)
 
 /**
  * Definition for singly-linked list.
